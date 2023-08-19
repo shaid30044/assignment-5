@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
 
+    <!-- Title Icon -->
+
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+
     <!-- Daisy UI -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -16,6 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/1856f306ae.js" crossorigin="anonymous"></script>
 
     <style>
         .font-work {
@@ -30,8 +38,20 @@
             color: #E527B2;
         }
 
+        .font-color-3 {
+            color: #11111180;
+        }
+
         .color-primary {
             background: #E527B2;
+        }
+
+        .color-secondary {
+            background: #1111110D;
+        }
+
+        .star-color {
+            color: #FFC107;
         }
     </style>
 </head>
@@ -40,7 +60,8 @@
 
     <!-- header section -->
 
-    <header class="flex flex-col md:flex-row justify-between items-center font-color-1 bg-[#F9F6E2] h-screen px-10 lg:px-36 py-10 lg:py-0">
+    <header
+        class="flex flex-col md:flex-row justify-between items-center font-color-1 bg-[#F9F6E2] h-screen px-10 lg:px-36 py-10 lg:py-0">
         <div class="text-center">
             <h3 class="text-xl md:text-2xl lg:text-3xl font-medium">---SALE FEVER---</h3>
             <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold pt-6 md:pt-8 lg:pt-12 pb-10 md:pb-14 lg:pb-20">
@@ -48,11 +69,203 @@
                 <br>
                 above & get <span class="font-color-2">20% off</span>
             </h1>
-            <h4 class="text-xl md:text-2xl font-medium">Use Promo Code <span class="text-white color-primary px-4 md:px-6 py-2 md:py-3 rounded-lg">SELL200</span></h4>
+            <h4 class="text-xl md:text-2xl font-medium">Use Promo Code <span
+                    class="text-white color-primary px-4 md:px-6 py-2 md:py-3 rounded-lg">SELL200</span></h4>
         </div>
         <img class="md:w-80 lg:w-[550px]" src="./images/Summer 1.png" alt="">
     </header>
 
+    <!-- main section -->
+
+    <main class="flex flex-col lg:flex-row justify-center md:justify-around lg:justify-between font-color-1 bg-[#F8F8F8] px-10 lg:px-36 py-32">
+        <div class="">
+
+            <!-- kitchenware section -->
+
+            <h1 class="text-3xl lg:text-4xl text-center md:text-left font-semibold pb-8">Kitchenware</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod1.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center py-2">K. Accessories</h3>
+                    <p class="text-xl text-center font-color-3">39.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod2.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">K. Accessories</h3>
+                    <p class="text-xl text-center font-color-3">25.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod3.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">Home Cooker</h3>
+                    <p class="text-xl text-center font-color-3">49.00 TK</p>
+                </div>
+            </div>
+
+            <!-- Sportswear section -->
+
+            <h1 class="text-3xl lg:text-4xl text-center md:text-left font-semibold pt-16 pb-8">Sportswear</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod4.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center py-2">Sports Back Cap</h3>
+                    <p class="text-xl text-center font-color-3">49.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod5.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">Full Jersey Set</h3>
+                    <p class="text-xl text-center font-color-3">69.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod6.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">Sports cates</h3>
+                    <p class="text-xl text-center font-color-3">159.00 TK</p>
+                </div>
+            </div>
+
+            <!-- Furniture section -->
+
+            <h1 class="text-3xl lg:text-4xl text-center md:text-left font-semibold pt-16 pb-8">Furniture</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod7.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center py-2">Single Relax Chair</h3>
+                    <p class="text-xl text-center font-color-3">185.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod8.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">Children play</h3>
+                    <p class="text-xl text-center font-color-3">299.00 TK</p>
+                </div>
+                <div class="p-5 bg-white rounded-lg">
+                    <div class="flex justify-center items-center color-secondary rounded-lg py-8">
+                        <img class="h-32" src="./images/prod9.png" alt="">
+                    </div>
+                    <div class="text-center star-color pt-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center px-12 py-2">Flexible Sofa</h3>
+                    <p class="text-xl text-center font-color-3">339.00 TK</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart section -->
+
+        <div class="pt-[71px]">
+
+            <!-- coupon section -->
+
+            <div class="p-6 rounded-lg bg-white">
+                <h3 class="text-2xl font-medium pb-4">Have coupon?</h3>
+                <div class="flex items-center">
+                    <input
+                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#11111126] rounded-l-lg w-full lg:w-[188px] px-4 md:px-4 py-2 md:py-3"
+                        id="coupon" type="text" placeholder="Coupon code">
+                    <button
+                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#E527B2] text-white color-primary px-4 md:px-6 py-2 md:py-3 rounded-r-lg">Apply</button>
+                </div>
+            </div>
+
+            <!-- purchase section -->
+
+            <div class="px-6 pt-6 mt-6 rounded-lg bg-white">
+                <div class="text-xl md:text-xl font-medium py-6"></div>
+                <div class="py-6 border-t-2 border-b-2 border-[#11111180]">
+                    <h3 class="text-xl font-medium">
+                        Total price:
+                        <span class="font-color-3">0</span><span class="font-color-3">TK</span>
+                    </h3>
+                    <h3 class="text-xl font-medium">
+                        Discount:
+                        <span class="font-color-3">0</span><span class="font-color-3">TK</span>
+                    </h3>
+                    <h3 class="text-xl font-medium">
+                        Total:
+                        <span class="font-color-3">0</span><span class="font-color-3">TK</span>
+                    </h3>
+                </div>
+                <button
+                    class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#E527B2] text-white color-primary w-full py-2 md:py-3 mt-10 -mb-8 rounded-lg">Make
+                    Purchase</button>
+            </div>
+        </div>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
