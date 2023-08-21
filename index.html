@@ -244,11 +244,11 @@
             <div class="p-6 rounded-lg bg-white">
                 <h3 class="text-2xl font-medium pb-4">Have coupon?</h3>
                 <div class="flex items-center">
-                    <input id="coupon-field"
-                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#11111126] rounded-l-lg w-full lg:w-[188px] px-4 md:px-4 py-2 md:py-3"
+                    <input id="coupon-field" disabled
+                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#11111126] rounded-l-lg w-full lg:w-[188px] px-4 md:px-4 py-2 md:py-3 disabled:cursor-not-allowed"
                         id="coupon" type="text" placeholder="Coupon code">
-                    <button id="coupon-btn"
-                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#E527B2] text-white hover:text-[#111111] color-primary px-4 md:px-6 py-2 md:py-3 rounded-r-lg">Apply</button>
+                    <button id="coupon-btn" disabled
+                        class="text-xl md:text-xl font-medium border-l-[1px] border-t-[1px] border-b-[1px] border-[#E527B2] text-white hover:text-[#111111] color-primary px-4 md:px-6 py-2 md:py-3 rounded-r-lg disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-200 disabled:cursor-not-allowed">Apply</button>
                 </div>
             </div>
 
@@ -271,8 +271,8 @@
                     </h3>
                 </div>
                 <div class="flex">
-                    <button
-                        class="text-xl md:text-xl font-medium text-center text-white hover:text-[#111111] color-primary w-full py-2 md:py-3 mt-10 -mb-5 rounded-lg cursor-pointer"
+                    <button id="purchase-btn" disabled
+                        class="text-xl md:text-xl font-medium text-center text-white hover:text-[#111111] color-primary w-full py-2 md:py-3 mt-10 -mb-5 rounded-lg cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed"
                         onclick="my_modal_1.showModal()">Make
                         Purchase</button>
                     <dialog id="my_modal_1" class="modal">
@@ -281,7 +281,7 @@
                             <h3 class="text-4xl md:text-5xl font-bold pt-10 pb-4">Congratulations</h3>
                             <p class="text-xl text-[#11111180] pb-10">Your Purchase the product</p>
                             <div class="modal-action">
-                                <button
+                                <button id="home-btn"
                                     class="text-xl md:text-xl font-medium text-white hover:text-[#111111] color-primary px-5 py-2 md:py-3 rounded-lg cursor-pointer">
                                     Go Home
                                 </button>
@@ -294,7 +294,6 @@
     </main>
 
     <script src="js/items.js"></script>
-    <script src="js/calculation.js"></script>
 </body>
 
 </html>
